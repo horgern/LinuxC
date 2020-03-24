@@ -1,0 +1,2 @@
+编译成lib库，如果再用gcc 的-D 去编译，这时候gcc传入的宏只对scope_main.c 生效，而 
+不对lib库生效
