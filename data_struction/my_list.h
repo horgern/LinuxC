@@ -110,11 +110,11 @@ static inline int DoubleListIsEmpty(struct D_LIST_NODE *list_head)
 static inline void DoubleListDump(struct D_LIST_NODE *list_head)
 {
 	struct D_LIST_NODE *pos, *n;
-
+	int i = 0;
 	
 	LIST_FOR_EACH_SAFE(pos, n, list_head)
 	{
-		printf("%p->", pos);
+		printf("[%d][%p] ->\n", i++, pos);
 	}
 	printf("\n");
 }	
