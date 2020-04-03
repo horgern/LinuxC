@@ -21,7 +21,7 @@ int main()
 	D_LIST_HEAD_INIT(&list_head);
 
 	for (i = 0; i < 10; i++) {
-		list_new = calloc(1, sizeof(NodeTest_t));
+		list_new = calloc(1, sizeof(NodeTest_t));	//申请的空间大小 与 LIST_NODE_ENTRY type 类型要一致
 		if (list_new == NULL) {
 			printf("calloc fail\n");
 			return;
